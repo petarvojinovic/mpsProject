@@ -10,6 +10,7 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_Agregation;
+  private ConceptPresentation props_Constraint;
   private ConceptPresentation props_DomainInfo;
   private ConceptPresentation props_DomainInstance;
   private ConceptPresentation props_DomainTable;
@@ -34,6 +35,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Agregation = cpb.create();
         }
         return props_Agregation;
+      case LanguageConceptSwitch.Constraint:
+        if (props_Constraint == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Constraint");
+          props_Constraint = cpb.create();
+        }
+        return props_Constraint;
       case LanguageConceptSwitch.DomainInfo:
         if (props_DomainInfo == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

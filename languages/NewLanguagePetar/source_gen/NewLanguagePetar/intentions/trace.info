@@ -92,17 +92,17 @@
   </root>
   <root nodeRef="r:a52e79b3-e568-4c12-928b-50a3d2652b77(NewLanguagePetar.intentions)/3762182590350272526">
     <file name="IntentionsDescriptor.java">
-      <node id="3762182590350272526" at="38,64,39,48" concept="1" />
-      <node id="3762182590350272526" at="52,50,53,34" concept="1" />
+      <node id="3762182590350272526" at="38,64,39,59" concept="1" />
+      <node id="3762182590350272526" at="52,50,53,45" concept="1" />
     </file>
-    <file name="proba_Intention.java">
+    <file name="addToDomainTable_Intention.java">
       <node id="3762182590350272526" at="25,0,26,0" concept="2" trace="myCachedExecutable" />
-      <node id="3762182590350272526" at="27,28,28,142" concept="9" />
-      <node id="3762182590350272526" at="32,35,33,19" concept="6" />
+      <node id="3762182590350272526" at="27,39,28,142" concept="9" />
+      <node id="3762182590350272526" at="32,35,33,30" concept="6" />
       <node id="3762182590350272526" at="37,35,38,17" concept="6" />
       <node id="3762182590350272526" at="42,37,43,105" concept="1" />
       <node id="3762182590350272526" at="44,5,45,30" concept="6" />
-      <node id="3762182590350273614" at="52,87,53,21" concept="6" />
+      <node id="3762182590350273614" at="52,87,53,32" concept="6" />
       <node id="3762182590350274713" at="57,78,58,25" concept="5" />
       <node id="3762182590350274860" at="58,25,59,0" concept="7" />
       <node id="3762182590350274981" at="59,0,60,195" concept="5" />
@@ -115,13 +115,13 @@
       <node id="3762182590350346450" at="66,0,67,156" concept="1" />
       <node id="3762182590350274896" at="67,156,68,0" concept="7" />
       <node id="3762182590350272526" at="72,86,73,18" concept="6" />
-      <node id="3762182590350272526" at="79,48,80,34" concept="6" />
+      <node id="3762182590350272526" at="79,48,80,45" concept="6" />
       <node id="3762182590350272526" at="86,0,87,0" concept="8" trace="reference$Z$lO" />
       <node id="3762182590350272526" at="87,0,88,0" concept="8" trace="rowData$2R2l" />
       <node id="3762182590350272526" at="88,0,89,0" concept="8" trace="table$azIb" />
       <node id="3762182590350272526" at="89,0,90,0" concept="8" trace="rows$oUi" />
       <node id="3762182590350272526" at="48,0,50,0" concept="0" trace="IntentionImplementation#()V" />
-      <node id="3762182590350272526" at="27,0,30,0" concept="0" trace="proba_Intention#()V" />
+      <node id="3762182590350272526" at="27,0,30,0" concept="0" trace="addToDomainTable_Intention#()V" />
       <node id="3762182590350272526" at="41,99,44,5" concept="3" />
       <node id="3762182590350272526" at="31,0,35,0" concept="4" trace="getPresentation#()Ljava/lang/String;" />
       <node id="3762182590350272526" at="36,0,40,0" concept="4" trace="isSurroundWith#()Z" />
@@ -131,13 +131,13 @@
       <node id="3762182590350272526" at="41,0,47,0" concept="4" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
       <node id="3762182590350272526" at="56,0,70,0" concept="4" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <scope id="3762182590350272526" at="48,38,48,38" />
-      <scope id="3762182590350272526" at="27,28,28,142" />
-      <scope id="3762182590350272526" at="32,35,33,19" />
+      <scope id="3762182590350272526" at="27,39,28,142" />
+      <scope id="3762182590350272526" at="32,35,33,30" />
       <scope id="3762182590350272526" at="37,35,38,17" />
       <scope id="3762182590350272526" at="42,37,43,105" />
-      <scope id="3762182590350272528" at="52,87,53,21" />
+      <scope id="3762182590350272528" at="52,87,53,32" />
       <scope id="3762182590350272526" at="72,86,73,18" />
-      <scope id="3762182590350272526" at="79,48,80,34" />
+      <scope id="3762182590350272526" at="79,48,80,45" />
       <scope id="3762182590350272526" at="48,0,50,0" />
       <scope id="3762182590350272526" at="27,0,30,0" />
       <scope id="3762182590350272526" at="31,0,35,0" />
@@ -166,9 +166,9 @@
         <var name="editorContext" id="3762182590350272526" />
         <var name="node" id="3762182590350272526" />
       </scope>
-      <unit id="3762182590350272526" at="85,0,91,0" name="NewLanguagePetar.intentions.proba_Intention$LINKS" />
-      <unit id="3762182590350272526" at="47,0,84,0" name="NewLanguagePetar.intentions.proba_Intention$IntentionImplementation" />
-      <unit id="3762182590350272526" at="24,0,92,0" name="NewLanguagePetar.intentions.proba_Intention" />
+      <unit id="3762182590350272526" at="85,0,91,0" name="NewLanguagePetar.intentions.addToDomainTable_Intention$LINKS" />
+      <unit id="3762182590350272526" at="47,0,84,0" name="NewLanguagePetar.intentions.addToDomainTable_Intention$IntentionImplementation" />
+      <unit id="3762182590350272526" at="24,0,92,0" name="NewLanguagePetar.intentions.addToDomainTable_Intention" />
     </file>
   </root>
 </debug-info>

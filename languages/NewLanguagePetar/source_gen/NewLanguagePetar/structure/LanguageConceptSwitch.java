@@ -10,21 +10,23 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
   public static final int Agregation = 0;
-  public static final int DomainInfo = 1;
-  public static final int DomainInstance = 2;
-  public static final int DomainTable = 3;
-  public static final int ExclusiveSpecialization = 4;
-  public static final int Field = 5;
-  public static final int NonExclusiveSpecialization = 6;
-  public static final int Reference = 7;
-  public static final int Set = 8;
-  public static final int Structure = 9;
-  public static final int StructureReference = 10;
-  public static final int StructureRepository = 11;
+  public static final int Constraint = 1;
+  public static final int DomainInfo = 2;
+  public static final int DomainInstance = 3;
+  public static final int DomainTable = 4;
+  public static final int ExclusiveSpecialization = 5;
+  public static final int Field = 6;
+  public static final int NonExclusiveSpecialization = 7;
+  public static final int Reference = 8;
+  public static final int Set = 9;
+  public static final int Structure = 10;
+  public static final int StructureReference = 11;
+  public static final int StructureRepository = 12;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x965ca885a8841e4L, 0xba571689a2e96932L);
     builder.put(0x3435f5220dd8262dL, Agregation);
+    builder.put(0x3435f5220e0cff55L, Constraint);
     builder.put(0x3435f5220dd82510L, DomainInfo);
     builder.put(0x3435f5220dd82511L, DomainInstance);
     builder.put(0x3435f5220dd82512L, DomainTable);

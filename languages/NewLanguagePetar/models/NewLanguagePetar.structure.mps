@@ -139,6 +139,18 @@
       <property role="TrG5h" value="size" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="3gPXi8e0x4u" role="1TKVEl">
+      <property role="IQ2nx" value="3762182590350627102" />
+      <property role="TrG5h" value="showConstraints" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="3gPXi8e3fXD" role="1TKVEi">
+      <property role="IQ2ns" value="3762182590351343465" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="constraints" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="3gPXi8e3fXl" resolve="Constraint" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3gPXi8dQ2kh">
     <property role="EcuMT" value="3762182590347879697" />
@@ -243,6 +255,16 @@
     </node>
     <node concept="PrWs8" id="3gPXi8dVCdE" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3gPXi8e3fXl">
+    <property role="EcuMT" value="3762182590351343445" />
+    <property role="TrG5h" value="Constraint" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="3gPXi8e3fXm" role="1TKVEl">
+      <property role="IQ2nx" value="3762182590351343446" />
+      <property role="TrG5h" value="constraintDefinition" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

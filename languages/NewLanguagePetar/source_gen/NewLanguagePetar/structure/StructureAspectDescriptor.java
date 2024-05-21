@@ -12,11 +12,12 @@ import jetbrains.mps.smodel.adapter.ids.SConceptId;
 import jetbrains.mps.smodel.runtime.DataTypeDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
-import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
+import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAgregation = createDescriptorForAgregation();
+  /*package*/ final ConceptDescriptor myConceptConstraint = createDescriptorForConstraint();
   /*package*/ final ConceptDescriptor myConceptDomainInfo = createDescriptorForDomainInfo();
   /*package*/ final ConceptDescriptor myConceptDomainInstance = createDescriptorForDomainInstance();
   /*package*/ final ConceptDescriptor myConceptDomainTable = createDescriptorForDomainTable();
@@ -43,7 +44,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAgregation, myConceptDomainInfo, myConceptDomainInstance, myConceptDomainTable, myConceptExclusiveSpecialization, myConceptField, myConceptNonExclusiveSpecialization, myConceptReference, myConceptSet, myConceptStructure, myConceptStructureReference, myConceptStructureRepository);
+    return Arrays.asList(myConceptAgregation, myConceptConstraint, myConceptDomainInfo, myConceptDomainInstance, myConceptDomainTable, myConceptExclusiveSpecialization, myConceptField, myConceptNonExclusiveSpecialization, myConceptReference, myConceptSet, myConceptStructure, myConceptStructureReference, myConceptStructureRepository);
   }
 
   @Override
@@ -52,6 +53,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     switch (myIndexSwitch.index(id)) {
       case LanguageConceptSwitch.Agregation:
         return myConceptAgregation;
+      case LanguageConceptSwitch.Constraint:
+        return myConceptConstraint;
       case LanguageConceptSwitch.DomainInfo:
         return myConceptDomainInfo;
       case LanguageConceptSwitch.DomainInstance:
@@ -98,6 +101,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(3);
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForConstraint() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("NewLanguagePetar", "Constraint", 0x965ca885a8841e4L, 0xba571689a2e96932L, 0x3435f5220e0cff55L);
+    b.class_(false, false, false);
+    b.origin("r:68925f54-d194-4736-ad0d-fc03d0e4c77c(NewLanguagePetar.structure)/3762182590351343445");
+    b.version(3);
+    b.property("constraintDefinition", 0x3435f5220e0cff56L).type(PrimitiveTypeId.STRING).origin("3762182590351343446").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForDomainInfo() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("NewLanguagePetar", "DomainInfo", 0x965ca885a8841e4L, 0xba571689a2e96932L, 0x3435f5220dd82510L);
     b.class_(false, false, false);
@@ -106,6 +117,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(3);
     b.property("type", 0x3435f5220dd82520L).type(MetaIdFactory.dataTypeId(0x965ca885a8841e4L, 0xba571689a2e96932L, 0x3435f5220dd824eeL)).origin("3762182590347879712").done();
     b.property("size", 0x3435f5220dd82522L).type(PrimitiveTypeId.STRING).origin("3762182590347879714").done();
+    b.property("showConstraints", 0x3435f5220e02111eL).type(PrimitiveTypeId.BOOLEAN).origin("3762182590350627102").done();
+    b.aggregate("constraints", 0x3435f5220e0cff69L).target(0x965ca885a8841e4L, 0xba571689a2e96932L, 0x3435f5220e0cff55L).optional(true).ordered(true).multiple(true).origin("3762182590351343465").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForDomainInstance() {

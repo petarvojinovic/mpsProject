@@ -216,13 +216,13 @@
     </node>
   </node>
   <node concept="2S6QgY" id="3gPXi8dZawe">
-    <property role="TrG5h" value="proba" />
+    <property role="TrG5h" value="addToDomainTable" />
     <ref role="2ZfgGC" to="9p9:3gPXi8dQ2ir" resolve="Field" />
     <node concept="2S6ZIM" id="3gPXi8dZawf" role="2ZfVej">
       <node concept="3clFbS" id="3gPXi8dZawg" role="2VODD2">
         <node concept="3clFbF" id="3gPXi8dZaLe" role="3cqZAp">
           <node concept="Xl_RD" id="3gPXi8dZaLd" role="3clFbG">
-            <property role="Xl_RC" value="proba" />
+            <property role="Xl_RC" value="addToDomainTable" />
           </node>
         </node>
       </node>

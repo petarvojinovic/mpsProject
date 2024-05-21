@@ -36,7 +36,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
           // concept
           intentions = new IntentionFactory[2];
           intentions[0] = new createPredefinedField_Intention();
-          intentions[1] = new proba_Intention();
+          intentions[1] = new addToDomainTable_Intention();
         }
         break;
       default:
@@ -50,7 +50,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
   public Collection<IntentionFactory> getAllIntentions() {
     IntentionFactory[] rv = new IntentionFactory[2];
     rv[0] = new createPredefinedField_Intention();
-    rv[1] = new proba_Intention();
+    rv[1] = new addToDomainTable_Intention();
     return Arrays.asList(rv);
   }
   private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x965ca885a8841e4L, 0xba571689a2e96932L, 0x3435f5220dd8249bL)).seal();

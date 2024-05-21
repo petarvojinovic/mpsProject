@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="eqii9n0ac7j7yg3oirmd3ltga5tvazw">
-  <files names="TypesystemDescriptor.java:checkStructureNameLenght_NonTypesystemRule.java" />
+<product version="3" modelHash="-6vcdr421yp8ic7kshv0mj7obg3jx3a3">
+  <files names="TypesystemDescriptor.java:checkStructureNameLenght_NonTypesystemRule.java:checkUniqueStructureName_NonTypesystemRule.java" />
 </product>
 
